@@ -1,0 +1,26 @@
+
+.hero-biomedica {
+
+    background-image: url('images/fondotitulo.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    height: 350px; 
+    height: 450px;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    
+}
+
+.hero-biomedica h1 {
+
+    font-family: 'SM Grid Text Rounded', sans-serif; 
+    font-size: 10rem;
+    color: #000000;
+    text-align: center;
+    margin: 0; 
+    line-height: 1; 
+    font-weight: 900; 
+}
+
