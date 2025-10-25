@@ -1,30 +1,23 @@
-
 body {
     font-family: 'SM Grid Text Rounded', sans-serif; 
+
     color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
-    font-family: 'SM Grid Text Rounded', sans-serif; 
     font-weight: 700;
 }
 
 .hero-biomedica {
-
-    background-image: url('images/fondotitulo.jpg'); 
+    background-image: url('images/fondotitulo.jpg');
     background-size: cover;
     background-position: center; 
-    height: 350px; 
     height: 450px;
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
     width: 100%; 
-    
 }
 
 .hero-biomedica h1 {
-    font-size: 10rem;
+    font-size: 5rem;
     text-align: center;
     margin: 0; 
     line-height: 1; 
@@ -35,10 +28,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     position: relative;
     padding-top: 80px; 
     padding-bottom: 80px;
-    min-height: 700px; 
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    min-height: 600px; 
     overflow: hidden;
 }
 
@@ -55,43 +45,203 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     z-index: -1; 
 }
 
-.content-overlay {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    text-align: center; 
-}
-
 .intro-title {
-    font-size: 3.5rem; 
+    font-size: 3rem; 
     color: #000000; 
+    font-weight: 800;
 }
 
 .intro-text-box {
-    background-color: rgba(32, 130, 125, 0.9); 
+    background-color: rgba(32, 130, 125, 0.95); 
+    color: black; 
     border-radius: 15px; 
     text-align: left;
-    padding: 2%;
-    margin: 10%;
-    font-size: 140%;
+    padding: 3rem !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.intro-text-box .lead .bullet {
-    margin-right: 10px; 
-    font-weight: bold;
+.intro-text-box .lead {
+    font-weight: 400;
 }
 
 .concept-list li {
-    padding-left: 20px;
-    position: relative;
-    list-style: none;
-    margin-bottom: 8px;
-    text-indent: -1em; 
+    margin-bottom: 15px;
 }
 
-.concept-list li:before {
-    content: "•"; 
-    margin-right: 10px;
-    font-weight: bold;
-    color: #FFFFFF;
+.definition-text {
+    opacity: 0.9;
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+.technologies-section {
+    background-color: #f8f9fa; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-main-title {
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+    font-weight: 800;
+}
+@media (min-width: 992px) {
+    .section-main-title {
+        font-size: 3.8rem;
+    }
+}
+
+.device-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.device-name-box {
+    background-color: #20827d;
+    padding: 15px 40px;
+    border-radius: 50px; 
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(32, 130, 125, 0.4);
+}
+
+.device-title {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.device-visual-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.device-image-frame {
+    border: 8px solid #20827d;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+.device-image-frame:hover {
+    transform: scale(1.02);
+}
+
+.device-description-box {
+    background-color: #20827d;
+    color: #000000;
+    max-width: 800px;
+    text-align: center; 
+    border-radius: 15px;
+    padding: 2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-carousel-custom {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #20827d;
+    border: none;
+    color: #000000; 
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 0; 
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0; 
+}
+
+.btn-carousel-custom:hover {
+    background-color: #1a6b67; 
+    transform: scale(1.1);
+    color: white;
+}
+
+.impact-parallax-section {
+    position: relative;
+    padding: 100px 0; 
+    min-height: 80vh; 
+    display: flex; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallax-bg-impact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/impacto-global-fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    z-index: -1;
+    filter: brightness(0.8); 
+}
+
+.impact-text-box {
+    background-color: rgba(32, 130, 125, 0.9);
+    border-radius: 15px;
+    padding: 30px 15px 30px 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    color: #000000;
+    max-height: 500px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.impact-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    flex-shrink: 0; 
+}
+
+.scrollable-content {
+    overflow-y: auto; 
+    padding-right: 15px; 
+}
+
+.scrollable-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 1);
 }
