@@ -1,11 +1,18 @@
 body {
     font-family: 'SM Grid Text Rounded', sans-serif; 
-
     color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
     font-weight: 700;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar .nav-link.active {
+    color: #ffffff !important;
+    font-weight: bold;
 }
 
 .hero-biomedica {

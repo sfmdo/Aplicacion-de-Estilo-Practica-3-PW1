@@ -8,13 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">BIOMÉDICA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduccion">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#impacto">Impacto Global</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#disciplinas">Disciplinas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#especializacion">Especialización</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero-biomedica d-flex justify-content-center align-items-center">
         <div class="text-center">
             <h1 class="display-1 text-dark mb-0 p-3">BIOMEDICA</h1> 
         </div>
     </header>
 
-    <section class="intro-parallax-section">
+
+    <section id="introduccion" class="intro-parallax-section">
         <div class="parallax-bg" style="background-image: url('images/imagenintroduccion.jpg');"></div>
         <div class="container content-overlay py-5">
             <h2 class="text-center intro-title mb-5">INTRODUCCION</h2>
@@ -31,31 +60,31 @@
                             <li>
                                 Biología Molecular:
                                 <span class="d-block definition-text">
-                                    Estudio de las moléculas y procesos vitales dentro de las células, como el ADN, ARN y la síntesis de proteínas. Es fundamental para el diagnóstico genético y la terapia.
+                                    Estudio de las moléculas y procesos vitales dentro de las células.
                                 </span>
                             </li>
                             <li>
                                 Bioquímica:
                                 <span class="d-block definition-text">
-                                    Exploración de la química de la vida, centrándose en las reacciones químicas que ocurren en organismos vivos para comprender enfermedades.
+                                    Exploración de la química de la vida para comprender enfermedades.
                                 </span>
                             </li>
                             <li>
                                 Ingeniería Biomédica:
                                 <span class="d-block definition-text">
-                                    Aplicación de principios de ingeniería para resolver problemas en medicina y biología, desde el diseño de dispositivos médicos hasta la ingeniería de tejidos.
+                                    Aplicación de principios de ingeniería para resolver problemas en medicina.
                                 </span>
                             </li>
                             <li>
                                 Medicina Personalizada:
                                 <span class="d-block definition-text">
-                                    Modelo médico que adapta el tratamiento al paciente individual basándose en su perfil genético único, estilo de vida y entorno.
+                                    Modelo médico que adapta el tratamiento al perfil genético del paciente.
                                 </span>
                             </li>
                             <li>
                                 Biotecnología:
                                 <span class="d-block definition-text">
-                                    Uso de sistemas biológicos, organismos vivos o sus derivados para crear o modificar productos o procesos para un uso específico.
+                                    Uso de sistemas biológicos para crear o modificar productos.
                                 </span>
                             </li>
                         </ul>
@@ -65,298 +94,132 @@
         </div>
     </section>
 
-    <section class="container-fluid py-5 technologies-section">
+
+    <section id="tecnologias" class="container-fluid py-5 technologies-section">
         <div class="row justify-content-center">
             <div class="col-12 text-center mb-5">
                 <h2 class="section-main-title">TECNOLOGIAS Y DISPOSITIVOS</h2>
             </div>
         </div>
-
         <div class="row justify-content-center"> 
             <div class="col-12">
                 <div id="biomedicalCarousel" class="carousel slide" data-bs-ride="carousel">
-                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="device-content-wrapper d-flex flex-column align-items-center">
-                                <div class="device-name-box mb-4">
-                                    <h3 class="text-center device-title">RESONADOR MAGNÉTICO</h3>
-                                </div>
-
+                                <div class="device-name-box mb-4"><h3 class="text-center device-title">RESONADOR MAGNÉTICO</h3></div>
                                 <div class="d-flex align-items-center justify-content-center mb-4 device-visual-row">
-                                    <button class="btn-carousel-custom me-3 me-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="prev">
-                                        ‹
-                                    </button>
-                                    
-                                    <div class="device-image-frame">
-                                        <img src="images/resonadormagnetico.jpg" class="d-block w-100 device-image" alt="Resonador Magnético">
-                                    </div>
-                                    
-                                    <button class="btn-carousel-custom ms-3 ms-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="next">
-                                        ›
-                                    </button>
+                                    <button class="btn-carousel-custom me-3 me-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="prev">‹</button>
+                                    <div class="device-image-frame"><img src="images/resonadormagnetico.jpg" class="d-block w-100 device-image" alt="Resonador Magnético"></div>
+                                    <button class="btn-carousel-custom ms-3 ms-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="next">›</button>
                                 </div>
-                                <div class="device-description-box p-4 rounded">
-                                    <p class="lead mb-0">
-                                        PRODUCE IMÁGENES DEL FLUJO SANGUÍNEO A CIERTAS ÁREAS DEL CEREBRO. LA RESONANCIA MAGNÉTICA FUNCIONAL PERMITE EXAMINAR LA ANATOMÍA DEL CEREBRO Y DETERMINAR QUÉ PARTES DEL CEREBRO MANEJAN LAS FUNCIONES CRÍTICAS, EL LENGUAJE Y LOS MOVIMIENTOS.
-                                    </p>
-                                </div>
+                                <div class="device-description-box p-4 rounded"><p class="lead mb-0">PRODUCE IMÁGENES DEL FLUJO SANGUÍNEO A CIERTAS ÁREAS DEL CEREBRO. PERMITE EXAMINAR LA ANATOMÍA Y DETERMINAR QUÉ PARTES MANEJAN FUNCIONES CRÍTICAS.</p></div>
                             </div>
                         </div>
-
                         <div class="carousel-item">
                             <div class="device-content-wrapper d-flex flex-column align-items-center">
-                                <div class="device-name-box mb-4">
-                                    <h3 class="text-center device-title">ELECTROCARDIÓGRAFO (ECG)</h3>
-                                </div>
-
+                                <div class="device-name-box mb-4"><h3 class="text-center device-title">ELECTROCARDIÓGRAFO (ECG)</h3></div>
                                 <div class="d-flex align-items-center justify-content-center mb-4 device-visual-row">
-                                    <button class="btn-carousel-custom me-3 me-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="prev">
-                                        ‹
-                                    </button>
-                                    
-                                    <div class="device-image-frame">
-                                        <img src="images/electrocardiografo.png" class="d-block w-100 device-image" alt="Electrocardiógrafo">
-                                    </div>
-                                    
-                                    <button class="btn-carousel-custom ms-3 ms-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="next">
-                                        ›
-                                    </button>
+                                    <button class="btn-carousel-custom me-3 me-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="prev">‹</button>
+                                    <div class="device-image-frame"><img src="images/electrocardiografo.png" class="d-block w-100 device-image" alt="Electrocardiógrafo"></div>
+                                    <button class="btn-carousel-custom ms-3 ms-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="next">›</button>
                                 </div>
-
-                                <div class="device-description-box p-4 rounded">
-                                    <p class="lead mb-0">
-                                        DISPOSITIVO UTILIZADO PARA REGISTRAR LA ACTIVIDAD ELÉCTRICA DEL CORAZÓN DURANTE UN PERÍODO DE TIEMPO, RECOGIDA POR ELECTRODOS COLOCADOS EN LA PIEL. ES FUNDAMENTAL PARA DETECTAR ARRITMIAS, ISQUEMIA CARDÍACA Y OTRAS PATOLOGÍAS CARDÍACAS.
-                                    </p>
-                                </div>
+                                <div class="device-description-box p-4 rounded"><p class="lead mb-0">DISPOSITIVO UTILIZADO PARA REGISTRAR LA ACTIVIDAD ELÉCTRICA DEL CORAZÓN. ES FUNDAMENTAL PARA DETECTAR ARRITMIAS, ISQUEMIA CARDÍACA Y OTRAS PATOLOGÍAS.</p></div>
                             </div>
                         </div>
-                        
                         <div class="carousel-item">
                             <div class="device-content-wrapper d-flex flex-column align-items-center">
-                                <div class="device-name-box mb-4">
-                                    <h3 class="text-center device-title">MONITOR DE SIGNOS VITALES</h3>
-                                </div>
-
+                                <div class="device-name-box mb-4"><h3 class="text-center device-title">MONITOR DE SIGNOS VITALES</h3></div>
                                 <div class="d-flex align-items-center justify-content-center mb-4 device-visual-row">
-                                    <button class="btn-carousel-custom me-3 me-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="prev">
-                                        ‹
-                                    </button>
-                                    
-                                    <div class="device-image-frame">
-                                        <img src="images/monitor-signos-vitales.jpg" class="d-block w-100 device-image" alt="Monitor de Signos Vitales">
-                                    </div>
-                                    
-                                    <button class="btn-carousel-custom ms-3 ms-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="next">
-                                        ›
-                                    </button>
+                                    <button class="btn-carousel-custom me-3 me-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="prev">‹</button>
+                                    <div class="device-image-frame"><img src="images/monitor-signos-vitales.jpg" class="d-block w-100 device-image" alt="Monitor de Signos Vitales"></div>
+                                    <button class="btn-carousel-custom ms-3 ms-md-5" type="button" data-bs-target="#biomedicalCarousel" data-bs-slide="next">›</button>
                                 </div>
-
-                                <div class="device-description-box p-4 rounded">
-                                    <p class="lead mb-0">
-                                        EQUIPO UTILIZADO PARA MEDIR Y MOSTRAR PARÁMETROS FISIOLÓGICOS ESENCIALES DEL PACIENTE EN TIEMPO REAL, TALES COMO LA FRECUENCIA CARDÍACA, PRESIÓN ARTERIAL, SATURACIÓN DE OXÍGENO Y TEMPERATURA. CRÍTICO EN UNIDADES DE CUIDADOS INTENSIVOS (UCI).
-                                    </p>
-                                </div>
+                                <div class="device-description-box p-4 rounded"><p class="lead mb-0">EQUIPO UTILIZADO PARA MEDIR Y MOSTRAR PARÁMETROS FISIOLÓGICOS ESENCIALES DEL PACIENTE EN TIEMPO REAL. CRÍTICO EN UNIDADES DE CUIDADOS INTENSIVOS (UCI).</p></div>
                             </div>
                         </div>
-                        
                     </div> 
                 </div>
             </div>
         </div>
     </section>
 
-<section id="impact-section" class="impact-parallax-section">
-    <div class="parallax-bg-impact"></div>
-    
-    <div class="container content-overlay d-flex justify-content-center align-items-center py-5">
-        <div class="row justify-content-center w-100">
-            <div class="col-lg-8 col-md-10">
-                
-                <div class="impact-text-box">
-                    <h2 class="impact-title text-center mb-4">IMPACTO GLOBAL CLAVE</h2>
-                    <div class="scrollable-content">
-                        <p>
-                            El impacto se resume en la capacidad de estas áreas para salvar vidas, 
-                            prolongarlas y mejorar su calidad en todas las regiones del mundo, a menudo a 
-                            través de la innovación tecnológica y la investigación científica. La biotecnología
-                             moderna ha revolucionado la medicina con el desarrollo de terapias génicas que pueden 
-                             curar enfermedades hereditarias, la producción de vacunas más seguras y efectivas como las
-                              de ARNm, y la creación de antibióticos y fármacos personalizados que atacan células cancerosas 
-                              sin dañar el tejido sano.
-                        </p>
-                        <p>
-                            En la agricultura, ha permitido el desarrollo de cultivos genéticamente modificados que 
-                            son resistentes a plagas, sequías y herbicidas, lo que aumenta la seguridad alimentaria global y 
-                            reduce el uso de pesticidas químicos. Estos avances no solo mejoran el rendimiento de las cosechas, 
-                            sino que también permiten enriquecer alimentos básicos con vitaminas y nutrientes esenciales, combatiendo 
-                            la malnutrición en comunidades vulnerables.
-                        </p>
-                        <p>
-                            Desde una perspectiva ambiental, la biotecnología ofrece soluciones sostenibles a problemas críticos. 
-                            Se utilizan microorganismos para la biorremediación, un proceso que limpia suelos y aguas contaminadas por 
-                            derrames de petróleo o residuos industriales. Además, es fundamental en la producción de biocombustibles a 
-                            partir de algas o residuos agrícolas, presentando una alternativa renovable a los combustibles fósiles y ayudando 
-                            a mitigar el cambio climático.
-                        </p>
-                        <p>
-                            Finalmente, en el ámbito industrial, el uso de enzimas y microorganismos en procesos de manufactura (la llamada "biotecnología blanca") reduce el consumo de energía, la generación de residuos y la dependencia de productos químicos agresivos, impulsando una economía circular y más respetuosa con el planeta.
-                        </p>
+ 
+    <section id="impacto" class="impact-parallax-section">
+        <div class="parallax-bg-impact"></div>
+        <div class="container content-overlay d-flex justify-content-center align-items-center py-5">
+            <div class="row justify-content-center w-100">
+                <div class="col-lg-8 col-md-10">
+                    <div class="impact-text-box">
+                        <h2 class="impact-title text-center mb-4">IMPACTO GLOBAL CLAVE</h2>
+                        <div class="scrollable-content">
+                            <p>El impacto se resume en la capacidad de estas áreas para salvar vidas, prolongarlas y mejorar su calidad en todas las regiones del mundo, a menudo a través de la innovación tecnológica y la investigación científica. La biotecnología moderna ha revolucionado la medicina con el desarrollo de terapias génicas, la producción de vacunas más seguras y efectivas como las de ARNm, y la creación de fármacos personalizados que atacan células cancerosas sin dañar el tejido sano.</p>
+                            <p>En la agricultura, ha permitido el desarrollo de cultivos genéticamente modificados resistentes a plagas y sequías, lo que aumenta la seguridad alimentaria global. Estos avances también permiten enriquecer alimentos básicos con vitaminas y nutrientes, combatiendo la malnutrición en comunidades vulnerables.</p>
+                            <p>Desde una perspectiva ambiental, la biotecnología ofrece soluciones sostenibles. Se utilizan microorganismos para la biorremediación, limpiando suelos y aguas contaminadas. Además, es fundamental en la producción de biocombustibles, presentando una alternativa renovable a los combustibles fósiles.</p>
+                            <p>Finalmente, en la industria, el uso de enzimas y microorganismos (la "biotecnología blanca") reduce el consumo de energía y la generación de residuos, impulsando una economía circular y más respetuosa con el planeta.</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="disciplines-section">
-    <div class="container py-5">
-        <h2 class="section-title text-center">DISCIPLINAS CLAVE</h2>
 
-        <div id="disciplinesCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="discipline-slide-content">
-                        <div class="discipline-title-box">
-                            <h3>BIOLOGÍA MOLECULAR Y CELULAR</h3>
+    <section id="disciplinas" class="disciplines-section">
+        <div class="container py-5">
+            <h2 class="section-title text-center">DISCIPLINAS CLAVE</h2>
+            <div id="disciplinesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="discipline-slide-content">
+                            <div class="discipline-title-box"><h3>BIOLOGÍA MOLECULAR Y CELULAR</h3></div>
+                            <div class="discipline-description-box"><p>Estudia la vida a nivel de moléculas (ADN, ARN, proteínas) y células. Es la base para entender cómo funcionan los organismos y se originan las enfermedades.</p><ul><li><strong>ENFOQUE:</strong> Replicación celular, expresión génica y señalización.</li><li><strong>IMPACTO:</strong> Permite el desarrollo de terapias génicas y dianas farmacológicas.</li></ul></div>
                         </div>
-                        <div class="discipline-description-box">
-                            <p>
-                                Esta disciplina estudia la vida a nivel de moléculas (ADN, ARN y proteínas) y dentro de las células. Es la base para entender cómo funcionan los organismos sanos y cómo se originan las enfermedades.
-                            </p>
-                            <ul>
-                                <li><strong>ENFOQUE:</strong> Investigación de los procesos de replicación celular, expresión génica y señalización celular.</li>
-                                <li><strong>IMPACTO:</strong> Permite el desarrollo de terapias génicas y el descubrimiento de dianas farmacológicas específicas.</li>
-                            </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="discipline-slide-content">
+                            <div class="discipline-title-box"><h3>GENÓMICA Y PROTEÓMICA</h3></div>
+                            <div class="discipline-description-box"><p>La genómica estudia el ADN completo de un organismo; la proteómica, el conjunto de proteínas. Juntas, ofrecen una visión integral de la función biológica.</p><ul><li><strong>ENFOQUE:</strong> Secuenciación de genomas y análisis de expresión de proteínas.</li><li><strong>IMPACTO:</strong> Clave para la medicina personalizada y el diagnóstico temprano.</li></ul></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="discipline-slide-content">
+                            <div class="discipline-title-box"><h3>BIOINFORMÁTICA</h3></div>
+                            <div class="discipline-description-box"><p>Aplica herramientas computacionales para analizar e interpretar la inmensa cantidad de datos biológicos generados por la genómica y otras áreas.</p><ul><li><strong>ENFOQUE:</strong> Desarrollo de algoritmos, modelado de proteínas y simulación molecular.</li><li><strong>IMPACTO:</strong> Acelera la investigación, el diseño de fármacos y la gestión de datos clínicos.</li></ul></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="discipline-slide-content">
+                            <div class="discipline-title-box"><h3>INGENIERÍA DE TEJIDOS Y MED. REGENERATIVA</h3></div>
+                            <div class="discipline-description-box"><p>Combina células, biomateriales y factores de crecimiento para crear tejidos y órganos funcionales que puedan reparar o reemplazar partes del cuerpo dañadas.</p><ul><li><strong>ENFOQUE:</strong> Diseño de andamios biocompatibles y cultivo de células madre.</li><li><strong>IMPACTO:</strong> Potencial para curar enfermedades crónicas y eliminar la necesidad de trasplantes.</li></ul></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="carousel-item">
-                    <div class="discipline-slide-content">
-                        <div class="discipline-title-box">
-                            <h3>GENÓMICA Y PROTEÓMICA</h3>
-                        </div>
-                        <div class="discipline-description-box">
-                            <p>
-                                La genómica estudia el conjunto completo de ADN (genoma) de un organismo, mientras que la proteómica analiza el conjunto de proteínas. Juntas, ofrecen una visión integral de la función biológica.
-                            </p>
-                            <ul>
-                                <li><strong>ENFOQUE:</strong> Secuenciación de genomas, identificación de genes asociados a enfermedades y análisis de la expresión de proteínas en diferentes tejidos o condiciones.</li>
-                                <li><strong>IMPACTO:</strong> Clave para la medicina personalizada, permitiendo tratamientos adaptados al perfil genético del paciente y el descubrimiento de biomarcadores para el diagnóstico temprano.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="discipline-slide-content">
-                        <div class="discipline-title-box">
-                            <h3>BIOINFORMÁTICA</h3>
-                        </div>
-                        <div class="discipline-description-box">
-                            <p>
-                                Es la aplicación de herramientas computacionales y estadísticas para analizar e interpretar la inmensa cantidad de datos biológicos generados por la genómica, proteómica y otras áreas.
-                            </p>
-                            <ul>
-                                <li><strong>ENFOQUE:</strong> Desarrollo de algoritmos para analizar secuencias de ADN, modelar estructuras de proteínas y simular interacciones moleculares.</li>
-                                <li><strong>IMPACTO:</strong> Acelera drásticamente la investigación, facilitando el diseño de fármacos, el análisis evolutivo y la gestión de datos clínicos a gran escala.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="discipline-slide-content">
-                        <div class="discipline-title-box">
-                            <h3>INGENIERÍA DE TEJIDOS Y MED. REGENERATIVA</h3>
-                        </div>
-                        <div class="discipline-description-box">
-                            <p>
-                                Combina células, biomateriales (andamios) y factores de crecimiento para crear tejidos y órganos funcionales que puedan reparar o reemplazar partes del cuerpo dañadas por enfermedad o trauma.
-                            </p>
-                            <ul>
-                                <li><strong>ENFOQUE:</strong> Diseño de andamios biocompatibles, cultivo de células madre y desarrollo de técnicas para implantar tejidos creados en laboratorio.</li>
-                                <li><strong>IMPACTO:</strong> Tiene el potencial de curar enfermedades crónicas, eliminar la necesidad de trasplantes de órganos y reparar lesiones en la médula espinal, piel o cartílago.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <button class="carousel-control-prev discipline-arrow" type="button" data-bs-target="#disciplinesCarousel" data-bs-slide="prev">
-                <span class="arrow-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next discipline-arrow" type="button" data-bs-target="#disciplinesCarousel" data-bs-slide="next">
-                <span class="arrow-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-    </div>
-</section>
-
-<section id="specialization-section" class="specialization-parallax-section">
-    <div class="parallax-bg-specialization"></div>
-    
-    <div class="container content-overlay d-flex justify-content-center align-items-center py-5">
-        <div class="row justify-content-center w-100">
-            <div class="col-lg-9 col-md-11">
-                
-                <div class="specialization-text-box">
-                    <h2 class="specialization-title text-center mb-4">ÁREAS DE ESPECIALIZACIÓN EN BIOMEDICINA</h2>
-                    
-                    <div class="scrollable-content">
-                        
-                        <div class="area-item">
-                            <h4>1. Medicina de Laboratorio (Análisis Clínicos)</h4>
-                            <p>
-                                Se centra en el diagnóstico de enfermedades mediante el análisis de muestras biológicas (sangre, orina, tejidos, etc.). Es esencial para el monitoreo de pacientes y el control de calidad en hospitales.
-                            </p>
-                            <p class="sub-specializations"><strong>Especializaciones típicas:</strong> Hematología, Inmunología Clínica, Microbiología, Bioquímica Clínica.</p>
-                        </div>
-
-                        <div class="area-item">
-                            <h4>2. Investigación Biomédica y Desarrollo (I+D)</h4>
-                            <p>
-                                Es el núcleo de la innovación. Los profesionales en esta área trabajan en laboratorios para entender los mecanismos moleculares de las enfermedades y desarrollar nuevas terapias, fármacos y tecnologías de diagnóstico.
-                            </p>
-                            <p class="sub-specializations"><strong>Especializaciones típicas:</strong> Terapia Génica y Celular, Farmacología, Neurociencia, Oncología Molecular.</p>
-                        </div>
-
-                        <div class="area-item">
-                            <h4>3. Biotecnología Sanitaria</h4>
-                            <p>
-                                Aplica organismos vivos o sus componentes para crear productos con fines médicos. Esto incluye desde la producción de vacunas y antibióticos hasta el desarrollo de terapias basadas en proteínas recombinantes.
-                            </p>
-                            <p class="sub-specializations"><strong>Especializaciones típicas:</strong> Producción de Fármacos Biológicos, Ingeniería Genética, Desarrollo de Vacunas de ARNm.</p>
-                        </div>
-
-                        <div class="area-item">
-                            <h4>4. Salud Pública y Epidemiología</h4>
-                            <p>
-                                Utiliza herramientas biomédicas para estudiar la distribución, causas y control de enfermedades en poblaciones. Es fundamental para la vigilancia de pandemias, el control de brotes y el diseño de políticas de salud.
-                            </p>
-                            <p class="sub-specializations"><strong>Especializaciones típicas:</strong> Epidemiología Molecular, Vigilancia Genómica de Patógenos, Salud Ambiental.</p>
-                        </div>
-
-                        <div class="area-item">
-                            <h4>5. Ingeniería Biomédica</h4>
-                            <p>
-                                Aunque es una disciplina en sí misma, se solapa enormemente con la biomedicina. Se enfoca en el diseño y construcción de tecnologías para la salud, como prótesis avanzadas, equipos de diagnóstico por imagen (MRI, CT) y dispositivos de monitorización.
-                            </p>
-                            <p class="sub-specializations"><strong>Especializaciones típicas:</strong> Biomecánica, Bioinstrumentación, Ingeniería de Tejidos, Informática Médica.</p>
-                        </div>
-
-                    </div>
-                </div>
-
+                <button class="carousel-control-prev discipline-arrow" type="button" data-bs-target="#disciplinesCarousel" data-bs-slide="prev"><span class="arrow-icon" aria-hidden="true"></span></button>
+                <button class="carousel-control-next discipline-arrow" type="button" data-bs-target="#disciplinesCarousel" data-bs-slide="next"><span class="arrow-icon" aria-hidden="true"></span></button>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="especializacion" class="specialization-parallax-section">
+        <div class="parallax-bg-specialization"></div>
+        <div class="container content-overlay d-flex justify-content-center align-items-center py-5">
+            <div class="row justify-content-center w-100">
+                <div class="col-lg-9 col-md-11">
+                    <div class="specialization-text-box">
+                        <h2 class="specialization-title text-center mb-4">ÁREAS DE ESPECIALIZACIÓN EN BIOMEDICINA</h2>
+                        <div class="scrollable-content">
+                            <div class="area-item"><h4>1. Medicina de Laboratorio (Análisis Clínicos)</h4><p>Se centra en el diagnóstico de enfermedades mediante el análisis de muestras biológicas (sangre, orina, etc.). Esencial para el monitoreo de pacientes.</p><p class="sub-specializations"><strong>Especializaciones:</strong> Hematología, Inmunología, Microbiología.</p></div>
+                            <div class="area-item"><h4>2. Investigación Biomédica y Desarrollo (I+D)</h4><p>Núcleo de la innovación. Se trabaja en laboratorios para entender enfermedades y desarrollar nuevas terapias, fármacos y tecnologías.</p><p class="sub-specializations"><strong>Especializaciones:</strong> Terapia Génica, Farmacología, Neurociencia.</p></div>
+                            <div class="area-item"><h4>3. Biotecnología Sanitaria</h4><p>Aplica organismos vivos para crear productos médicos, desde vacunas y antibióticos hasta terapias basadas en proteínas recombinantes.</p><p class="sub-specializations"><strong>Especializaciones:</strong> Fármacos Biológicos, Ingeniería Genética, Vacunas de ARNm.</p></div>
+                            <div class="area-item"><h4>4. Salud Pública y Epidemiología</h4><p>Usa herramientas biomédicas para estudiar la distribución, causas y control de enfermedades en poblaciones. Fundamental para la vigilancia de pandemias.</p><p class="sub-specializations"><strong>Especializaciones:</strong> Epidemiología Molecular, Vigilancia Genómica.</p></div>
+                            <div class="area-item"><h4>5. Ingeniería Biomédica</h4><p>Se enfoca en el diseño y construcción de tecnologías para la salud, como prótesis avanzadas, equipos de imagen (MRI) y dispositivos de monitorización.</p><p class="sub-specializations"><strong>Especializaciones:</strong> Biomecánica, Bioinstrumentación, Informática Médica.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
