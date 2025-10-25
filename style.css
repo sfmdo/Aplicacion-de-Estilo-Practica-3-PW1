@@ -358,3 +358,89 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .carousel-control-next .arrow-icon {
     clip-path: polygon(25% 0%, 0% 50%, 25% 100%, 100% 100%, 75% 50%, 100% 0%);
 }
+
+
+.specialization-parallax-section {
+    position: relative;
+    padding: 100px 0;
+    min-height: 90vh; 
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallax-bg-specialization {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/especializacion-fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+.specialization-text-box {
+    background-color: rgba(32, 130, 125, 0.92); 
+    border-radius: 20px;
+    padding: 30px 15px 30px 30px; 
+    box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+    color: #000000;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid rgba(255, 255, 255, 0.5); 
+    border-top: 2px solid rgba(255, 255, 255, 0.5); 
+}
+
+.specialization-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    flex-shrink: 0; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.specialization-text-box .scrollable-content {
+    overflow-y: auto;
+    padding-right: 15px; 
+}
+
+.area-item {
+    margin-bottom: 25px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+}
+
+.area-item:last-child {
+    border-bottom: none; 
+}
+
+.area-item h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.area-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.area-item .sub-specializations {
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.area-item .sub-specializations strong {
+    font-style: normal;
+}
